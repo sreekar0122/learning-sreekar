@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width,initial-scale=1"> 
+    </head>
+    <body>
+        <input type="text" id="studentname">
+        <input type="text" id = "nativeplace">
+        <input type="number" id = "age">
+        <button onclick="addProperties()">add</button>
+        <button onclick="printall()">print</button>
+        <script>
+            // const labels = ["name","native","age"]
+            // const arr = []
+            let profile = [{}]
+            function addProperties(){
+                let studentNameOb = document.querySelector("#studentname")
+                let nativeOb = document.querySelector("#nativeplace")
+                let ageOb = document.querySelector("#age")
+                // arr.push(studentNameOb.value)
+                // arr.push(nativeOb.value)
+                // arr.push(ageOb.value)
+                // for(let i=0; i<labels.length; i++){
+                //     profile.push({
+                //         [labels[i]]:arr[i]
+                //     })
+                // }
+                profile.name = studentNameOb.value
+                profile.native = nativeOb.value
+                profile.age = ageOb.value
+                console.log(profile)
+                
+            }
+            function printall(){
+                let profileJson = JSON.stringify(profile)
+                localStorage.setItem("profile_details",profileJson)
+                let convertedBack = JSON.parse(profileJson)
+                for(let i in convertedBack ){
+                    console.log(`${i}:${convertedBack[i]}`)
+                }
+            }
+        </script>
+    </body>
+</html>

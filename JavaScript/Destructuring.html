@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESTRUCTURING CODE</title>
+</head>
+<body>
+    <script>
+        let greeting, pronoun;
+        [greeting, pronoun] = ["Hi", "I" , "am", "swarna"];
+        console.log(greeting);
+        console.log(pronoun);
+
+        let [,pronouns,,name] = ["Hi", "I" , "am", "sreekar"];
+        console.log(pronoun);
+        console.log(name);
+
+        let [greet = "hi",names = "swarna"] = ["hello"];
+        console.log(greet);
+        console.log(names);
+
+        let {persons, country, job} = {name: "Sarah", country: "India", job: "Developer"};
+        console.log(name);
+        console.log(country);
+        console.log(job);
+
+        let person = {nam: "Sarah", countrys: "Nigeria", jobs: "Developer"};
+        let nam, countrys, jobs;
+        ({nam, countrys, jobs} = person);
+        console.log(nam);
+        console.log(jobs);
+
+        let persones = {na: "Sarah", country: "Nigeria", job: "Developer", friend: ["Annie","Becky"]};
+        let {na, friend, ...others} = person;
+        console.log(na);
+        console.log(friend);
+        console.log(others);
+
+        const user = {
+            id: 7105,
+            name: 'Sreekar',
+            age: 21,
+            education: {
+                degree: 'Bachelors'
+            }
+        };
+        const {education: {degree}} = user;
+        console.log(degree);
+
+        const users = {
+            id: 7001,
+            name: 'swarna',
+            age: 21
+        };
+        const {education: {school: {n = 'swarna'} = {}} = {}} = user;
+        console.log(n);
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width,initial-scale=1">
+        <title>Array Assignment</title>
+    </head>
+    <body>
+        <script>
+            let movies = ["aarya","kalki","indian-2","pushpa"]
+            movies.push("rrr")
+            alert(movies)
+            movies.unshift("anandh")
+            alert(movies)
+            movies.pop()
+            alert(movies)
+            movies.shift()
+            alert(movies)
+            let index = movies.indexOf("kalki")
+            alert(index)
+            alert(Array.isArray(movies))
+        </script>
+        <script>
+            const greetings = ["hi","hello","welcome","heartly","glad"]
+            for(let i =0; i<greetings.length; i++){
+                console.log(greetings[i])
+            }
+            greetings.forEach(function(greeting){
+                console.log(greeting)
+            })
+            greetings.forEach((number,index) =>{
+                console.log("index"+index+"value"+number)
+            })
+            greetings.forEach((number,index,array)=>{
+                console.log(array)
+            })
+        </script> 
+        <script>
+            let cricket = [
+                {
+                    "name": "rohit sharma",
+                    "team": "india",
+                    "role": "batter",
+                    "jersey no": 45,
+                    "experience": 15
+                },
+                {
+                    "name": "ab devillers",
+                    "team": "south africa",
+                    "role": "batter-wk",
+                    "jersey no": 17,
+                    "experience": 20
+                },
+                {
+                    "name": "starc",
+                    "team": "australia",
+                    "role": "bowler",
+                    "jersey no": 56,
+                    "experience": 23
+                }
+            ]
+            console.log(cricket)
+            let cricketer ={
+                    "name": "jonty rhodes",
+                    "team": "south africa",
+                    "role": "fielder",
+                    "jersey no": 8,
+                    "experience": 30
+            }
+            cricket.unshift(cricketer)
+            console.log(cricket)
+            let cricketer2 = {
+                    "name": "raina",
+                    "team": "india",
+                    "role": "batting-allrounder",
+                    "jersey no": 48,
+                    "experience": 17
+            }
+            cricket.push(cricketer2)
+            console.log(cricket)
+            let cricketer3={
+                    "name": "dwayne bravo",
+                    "team": "west indies",
+                    "role": "bowler",
+                    "jersey no": 47,
+                    "experience": 21
+            }
+            cricket.splice(2,0,cricketer3)
+            console.log(cricket)
+            let findCricketer = cricket.find(findCricketer => findCricketer.team === "india")
+            console.log (findCricketer)
+            let SaCricketers = cricket.filter(SaCricketers => SaCricketers.team = "south africa")
+            console.log(SaCricketers)
+
+            let categories = cricket.map(cc =>{
+                if(cc.experience <=20){
+                    return "junior player"
+                }
+                if(cc.experience <= 25){
+                    return "senior player"
+                }
+                return "retired player"
+            })
+            console.log(categories)
+
+            let cricketerExperience = cricket.map(c2 =>{
+                let properties = {
+                    "experience":c2.experience,
+                    "designation": "retired player"
+                }
+                if(c2.experience<=25){
+                    properties["designation"] = "senior player"
+                }
+                if(c2.experience<=20){
+                    properties["designation"]="junior player"
+                }
+                return properties
+            })
+            console.log(cricketerExperience)
+
+            let sortCricketers = cricket.sort((c1,c2)=>(c1.experience<c2.experience)?1:(c1.experience>c2.experience)?-1:0)
+            console.log(sortCricketers)
+
+        </script>
+    </body>
+</html>

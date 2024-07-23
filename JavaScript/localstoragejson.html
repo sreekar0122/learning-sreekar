@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width=device-width,initial-scale=1">
+        <title>Local Storage Example</title>
+
+    </head>
+    <body>
+        <input type ="text" name ="student">
+        <button onclick="addstudents()">add students</button>
+        <button onclick="showstudents()">show students</button>
+        <button onclick="removestudents()">remove students</button>
+        <script>
+            let students =[]
+            function addstudents(){
+                let inputOb = document.querySelector("input")
+                let studentName = inputOb.value
+                students.push(studentName)
+                //localStorage.setItem("student",students)
+                localStorage.setItem("student",JSON.stringify(students))
+                console.log(students)
+            }
+            function showstudents(){
+                console.log(JSON.parse(localStorage.getItem("student")))
+            }
+            function removestudents(){
+                console.log(localStorage.removeItem("student"))
+            }
+
+        </script>
+    </body>
+</html>

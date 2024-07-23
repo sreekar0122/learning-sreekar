@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width,initial-scale=1">
+        <title>
+            Query Selector
+        </title>
+    </head>
+    <body>
+        <div id = "myid">Hello id
+            <h1>hello div inside</h1>
+        </div>
+        <div class ="myclass">hello class </div>
+            <h1> hello h1</h1>
+            <h1>hello h2</h1>
+        <script>
+            let myidOb = document.querySelector("#myid")
+            let myclassOb = document.querySelector(".myclass")
+            let firstTagh1Ob = document.querySelector("h1")
+            alert(myidOb.textContent)
+            alert(myclassOb.textContent)
+            alert(firstTagh1Ob.textContent)
+            let h1tagAll = document.querySelectorAll("h1")
+            h1tagAll[0].style.color = "green"
+            let h1tagInsideOb = document.querySelector("#myid h1")
+            h1tagInsideOb.style.color = "red"
+        </script>
+    </body>
+</html>
