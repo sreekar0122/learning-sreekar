@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1">
+    <style>
+      #menu {
+  		border : 4px solid black;
+  		padding : 10px;
+ 		  margin: 5px;
+		}
+      #menu a{
+      	border : 2px solid black;
+  		  padding : 2px;
+ 		    margin: 5px;
+        text-decoration: none;
+		}
+      #top-news{
+      	border : 4px solid black;
+  		  padding : 2px;
+ 		    margin: 5px;
+      }
+      #image{
+        display: flex;
+        justify-content: center;
+        border: 4px solid black;
+      }
+      #imgcap{
+        text-align: center;
+      }
+      </style>
+  </head>
+  <body>
+    <figure>
+      <div id = "image">
+      <img src = "asc.jpg" alt = "ascendion"
+        width="800" 
+        height="500"/>
+      </div>
+      <figcaption id="imgcap">Ascendion Software</figcaption>
+    </figure>
+    <header>
+      <nav>
+        <div id = "menu">
+          <a href= "/home.html">Home</a>
+          <a href= "/about.html">about</a>
+          <a href= "/contact.html">contact</a>
+        </div>
+      </nav>
+      <title>NEWS</title>
+    </header>
+    <main>
+      <section id = "top-news">
+        <article id = "rain-dv">
+          <header>
+          <h3> Heavy rains in bengaluru</h3>
+          </header>
+          <div>
+            most people are effected by rains.
+            <footer>Author by : sreekar</footer>
+          </div>
+        </article>
+        <article>
+          <header>
+          <h2> Bengaluru is open for jobs</h2>
+          </header>
+          <div>
+            most feshers are moving back to bengaluru.
+            <footer>Author by : sreekar</footer>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <header> Footer </header>
+        <nav>
+          <a href = "/policy.html">policy</a>
+          <a href="/privacy.html">privacy</a>
+          <a href="/contact.html">contact</a>
+        </nav>
+    </footer>
+    <script>
+      let articleOb = document.getElementById("rain-dv")
+      articleOb.style.border = "4px solid red"
+      articleOb.style.color = "purple"
+      articleOb.onclick = function(){
+        alert("on click me")
+      } 
+      // articleOb.textContent = "Nothing"
+      // articleOb.style.marginLeft = "20px"
+    </script>
+  </body>
+</html>
