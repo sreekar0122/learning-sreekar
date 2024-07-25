@@ -21,12 +21,6 @@ Customers can choose from a wide variety of categories like vegetables, fruits e
 Filters like choosing price range, seller brand and tentative date of delivery for customers to choose which product to choose.
 
 
-
-
-
-
-
-
 14. Add to cart:
 Customers can add the same items with the symbols ‘+’  and reduce with “-” based on the options. And also update the products added.
 Customers will also be shown frequently bought products , with the options to add.
@@ -68,3 +62,10 @@ The details they will get from chatbot other than description like from where th
 20.Previously ordered item
 For the previously ordered item , the customer can see the option “previously ordered items” in the cart page and the customer can add that item with a click of “Buy Again”. And it automatically adds to the cart with the quantity they mentioned last time. 
 If they want they can update the order list based on their preferences.
+
+
+Done By:
+Swarna Sai Sreekar
+Gelle Hruthesh Reddy
+Raghunath Singh
+Manish
