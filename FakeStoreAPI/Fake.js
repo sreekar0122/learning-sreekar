@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate,Link } from "react-router-dom";
 
-function Categories() {
+function Fake() {
     const [details, setDetails] = useState([]);
     const [filteredDetails, setFilteredDetails] = useState([]);
     const [categories, setCategories] = useState([]);
@@ -10,6 +10,7 @@ function Categories() {
     const navigate = useNavigate();
 
     useEffect(() => {
+        console.log("Function is called on load");
         getDetails();
     }, []);
 
@@ -24,45 +25,42 @@ function Categories() {
     function getDetails() {
         axios
             .get("https://fakestoreapi.com/products")
-            .then(response => {
+            .then(function (response) {
+                console.log(response.data);
                 setDetails(response.data);
+
                 const uniqueCategories = ['All', ...new Set(response.data.map(product => product.category))];
                 setCategories(uniqueCategories);
             })
-            .catch(error => {
+            .catch(function (error) {
                 console.log(error);
             });
     }
 
     function handleCategoryClick(category) {
         setSelectedCategory(category);
-    }
-    
-    function handleDetailsClick(id) {
-        navigate(`/product/${id}`);
+
     }
 
     return (
         <div className="fake">
             <h1>Fake Store Details</h1>
 
-            {/* Category filter */}
             <div className="category-filter">
                 {categories.map(cat => (
-                    <button
+                    <Link to={`/${cat}`}><button
                         key={cat}
-                        onClick={() => handleCategoryClick(cat)}
+                        onClick={function()  {handleCategoryClick(cat)}}
                         className={cat === selectedCategory ? 'active' : ''}
                     >
                         {cat}
-                    </button>
+                    </button></Link>
                 ))}
             </div>
 
-            {/* Product list */}
             <div className="product-list">
-                {filteredDetails.map((val) => (
-                    <div key={val.id} className="product-card">
+                {filteredDetails.map((val, index) => (
+                    <div key={index} className="product-card">
                         <b>Title:</b> {val.title}
                         <div>
                             <b>Price:</b> ${val.price}
@@ -80,7 +78,9 @@ function Categories() {
                             <b>Rating:</b> {val.rating.rate}
                             <b>Count:</b> {val.rating.count}
                         </div>
-                        <button onClick={() => handleDetailsClick(val.id)}>Details</button>
+                        
+                        <Link to={`/${val.category}/${val.id}`}><button>Details</button></Link>
+
                     </div>
                 ))}
             </div>
@@ -88,4 +88,4 @@ function Categories() {
     );
 }
 
-export default Categories;
+export default Fake;
