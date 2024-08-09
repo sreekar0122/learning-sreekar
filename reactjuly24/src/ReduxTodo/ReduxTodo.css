@@ -1,0 +1,85 @@
+/* ReduxTodo.css */
+
+/* General container styling */
+div {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Todo item styling */
+div.todo-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.todo-item div {
+    margin-bottom: 5px;
+}
+
+.todo-item button {
+    background-color: #dc3545;
+    margin-right: 5px;
+}
+
+.todo-item button:hover {
+    background-color: #c82333;
+}
+
+/* Edit form styling */
+.edit-form {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.edit-form input[type="text"] {
+    margin-right: 10px;
+    width: 150px;
+}
+
+.edit-form select {
+    margin-right: 10px;
+}
