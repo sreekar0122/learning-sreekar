@@ -1,0 +1,19 @@
+<div class="login-container">
+    <button (click)="toggleLogin()" class="toggle-button">
+        {{ isLogin ? 'Hide Login' : 'Show Login' }}
+      </button>
+      <div *ngIf="isLogin">
+      <form name="loginForm" class="login-form">
+            <h2>LOGIN</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" ng-model="username" class="form-input">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" ng-model="password" class="form-input">
+            <br>
+            <button (click)="login()" class="btn btn-login">Login</button>
+            <button (click)="forgotPassword()" class="btn btn-forgot">Forgot Password</button>
+        </form>
+    </div>
+  </div>
+  
