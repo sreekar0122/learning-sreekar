@@ -1,0 +1,29 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <h1>Add Products</h1>
+    <label for="code">Code:</label>
+    <input id="code" formControlName="code" type="text">
+  
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" type="text">
+  
+    <label for="excerpt">Excerpt:</label>
+    <input id="excerpt" formControlName="excerpt" type="text">
+  
+    <label for="description">Description:</label>
+    <textarea id="description" formControlName="description"></textarea>
+  
+    <label for="price">Price:</label>
+    <input id="price" formControlName="price" type="number">
+  
+    <label for="category">Category:</label>
+    <select id="category" formControlName="category">
+      <option *ngFor="let category of categories" [value]="category._id">{{ category.name }}</option>
+    </select>
+  
+    <label for="status">Status:
+      <input id="status" formControlName="status" type="checkbox">
+    </label>
+  
+    <button type="submit">Add Product</button>
+  </form>
+  

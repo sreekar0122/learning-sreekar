@@ -1,0 +1,8 @@
+<h2>Square : {{result}}</h2>
+<h1>Angular Contact Form</h1>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="fullName" placeholder="Enter Name" formControlName="fullName"/><br />
+    <input type="email" name="email" placeholder="Enter email" formControlName="email"/><br />
+    <textarea  name="message" placeholder="Enter message" formControlName="message"></textarea><br />
+    <input type="submit" value="Send" />
+</form>
