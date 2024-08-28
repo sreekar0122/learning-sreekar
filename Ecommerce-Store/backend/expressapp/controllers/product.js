@@ -1,6 +1,6 @@
 const Product = require('../models/product');
 
-exports.createProduct = async (req, res) => {
+const createProduct = async (req, res) => {
   try {
     const product = new Product(req.body);
     await product.save();
@@ -10,7 +10,7 @@ exports.createProduct = async (req, res) => {
   }
 };
 
-exports.getAllProducts = async (req, res) => {
+const getAllProducts = async (req, res) => {
   try {
     const products = await Product.find();
     res.status(200).json(products);
@@ -19,7 +19,7 @@ exports.getAllProducts = async (req, res) => {
   }
 };
 
-exports.getProductById = async (req, res) => {
+const getProductById = async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);
     if (!product) {
@@ -31,7 +31,7 @@ exports.getProductById = async (req, res) => {
   }
 };
 
-exports.deleteProductById = async (req, res) => {
+const deleteProductById = async (req, res) => {
   try {
     const product = await Product.findByIdAndDelete(req.params.id);
     if (!product) {
@@ -43,7 +43,7 @@ exports.deleteProductById = async (req, res) => {
   }
 };
 
-exports.updateProductById = async (req, res) => {
+const updateProductById = async (req, res) => {
   try {
     const product = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!product) {
@@ -55,7 +55,7 @@ exports.updateProductById = async (req, res) => {
   }
 };
 
-exports.findByName = async (req, res) => {
+const findByName = async (req, res) => {
   try {
     const products = await Product.find({ name: req.params.name });
     res.status(200).json(products);
@@ -64,7 +64,7 @@ exports.findByName = async (req, res) => {
   }
 };
 
-exports.findByAvailability = async (req, res) => {
+const findByAvailability = async (req, res) => {
   try {
     const products = await Product.find({ availability: req.params.availability });
     res.status(200).json(products);
@@ -73,11 +73,22 @@ exports.findByAvailability = async (req, res) => {
   }
 };
 
-exports.findByPrice = async (req, res) => {
+const findByPrice = async (req, res) => {
   try {
     const products = await Product.find({ price: { $gt: req.params.price } });
     res.status(200).json(products);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
+};
+
+module.exports = {
+  createProduct,
+  getAllProducts,
+  getProductById,
+  deleteProductById,
+  updateProductById,
+  findByName,
+  findByAvailability,
+  findByPrice,
 };
