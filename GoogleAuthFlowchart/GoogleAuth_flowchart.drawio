@@ -1,0 +1,446 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.12" pages="2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1760" dy="-331" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-95" value="API" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1620" y="1788" width="422" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-96" value="Google OAuth API" style="whiteSpace=wrap;strokeWidth=2;labelBackgroundColor=default;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1737" y="1813" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-97" value="Backend" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="396" y="2028" width="775" height="692.5" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-100" value="google.initLogin" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="636" y="2208" width="130" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-101" value="google.getUserProfile" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="801" y="2347" width="169" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-102" value="google.getUserDetails" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="812" y="2652" width="172" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-106" value="createAuthURL" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="456" y="2412" width="123" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-108" value="getUserDetailsFromToken" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="787" y="2508" width="197" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-109" value="Frontend" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=bottom;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1397" y="2092" width="667" height="512" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-110" value="GoogleAuth Component" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1704" y="2347" width="184" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-111" target="sJ0Tuwt13oGMYcTh2VG5-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-146" value="recieve code" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontStyle=1" vertex="1" connectable="0" parent="sJ0Tuwt13oGMYcTh2VG5-145">
+          <mxGeometry x="-0.0103" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-111" target="sJ0Tuwt13oGMYcTh2VG5-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1597" y="2198" />
+              <mxPoint x="733" y="2198" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-150" value="provides code&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontStyle=1" vertex="1" connectable="0" parent="sJ0Tuwt13oGMYcTh2VG5-149">
+          <mxGeometry x="-0.0946" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-111" value="Callback Component" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1557" y="2117" width="162" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-112" value="Welcome Component" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1848" y="2484" width="167" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-113" value="initiates OAuth" style="curved=1;startArrow=none;endArrow=block;exitX=0.7;exitY=-0.01;entryX=1;entryY=0.99;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-110" target="sJ0Tuwt13oGMYcTh2VG5-96">
+          <mxGeometry x="-0.2415" y="7" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1925" y="2024" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-114" value="redirects to Google" style="curved=1;startArrow=none;endArrow=block;exitX=0.17;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-96" target="sJ0Tuwt13oGMYcTh2VG5-111">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1638" y="2024" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-119" value="fetches user profile" style="curved=1;startArrow=none;endArrow=block;exitX=0.75;exitY=1;entryX=0.48;entryY=0;rounded=0;fontSize=15;fontStyle=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-100" target="sJ0Tuwt13oGMYcTh2VG5-101">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="878" y="2313" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-124" value="handle login" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.21;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-110">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1313" y="2313" />
+            </Array>
+            <mxPoint x="766" y="2244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-129" value="returns profile details" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=1;entryX=0;entryY=0.25;rounded=0;fontSize=15;fontStyle=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-101" target="sJ0Tuwt13oGMYcTh2VG5-110">
+          <mxGeometry x="-0.0875" y="45" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1248" y="2508" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-130" value="fetches user details" style="curved=1;startArrow=none;endArrow=block;exitX=0.21;exitY=0.98;entryX=1;entryY=0.39;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-110" target="sJ0Tuwt13oGMYcTh2VG5-102">
+          <mxGeometry x="0.1823" y="3" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1524" y="2508" />
+              <mxPoint x="1044" y="2620" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-132" value="show user details" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.96;entryX=0.5;entryY=0;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-110" target="sJ0Tuwt13oGMYcTh2VG5-112">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-135" value="create auth URL" style="curved=1;startArrow=none;endArrow=block;exitX=0.89;exitY=0;entryX=0.5;entryY=0.98;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-106" target="sJ0Tuwt13oGMYcTh2VG5-100">
+          <mxGeometry x="-0.0027" y="7" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="672" y="2388" />
+              <mxPoint x="730" y="2313" />
+            </Array>
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-137" value="get user details from token" style="curved=1;startArrow=none;endArrow=block;exitX=0.35;exitY=0.98;entryX=0.32;entryY=0;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-108" target="sJ0Tuwt13oGMYcTh2VG5-102">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-140" value="generates auth URL" style="curved=1;startArrow=none;endArrow=block;entryX=0.5;entryY=0;rounded=0;fontSize=15;fontStyle=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-100" target="sJ0Tuwt13oGMYcTh2VG5-106">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="518" y="2268" />
+            </Array>
+            <mxPoint x="660" y="2268" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-142" value="returns profile details" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontSize=15;fontStyle=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-101" target="sJ0Tuwt13oGMYcTh2VG5-108">
+          <mxGeometry x="0.053" y="8" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.442;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=15;fontStyle=1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJ0Tuwt13oGMYcTh2VG5-100" target="sJ0Tuwt13oGMYcTh2VG5-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ0Tuwt13oGMYcTh2VG5-148" value="redirects to Google" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontStyle=1" vertex="1" connectable="0" parent="sJ0Tuwt13oGMYcTh2VG5-147">
+          <mxGeometry x="0.1089" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="oNyroTfpcXeA_K_ytDR8" name="Page-2">
+    <mxGraphModel dx="1440" dy="685" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-1" value="API" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1419" y="24" width="422" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-2" value="Google OAuth API" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1536" y="49" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-3" value="Backend" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="24" y="304" width="1207" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-4" value="google.getCredentials" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="483" y="738" width="172" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-5" value="google.createCredentials" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="814" y="738" width="195" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-6" value="google.initLogin" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="329" width="130" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-7" value="google.getUserProfile" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="655" y="431" width="169" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-8" value="google.getUserDetails" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="157" y="738" width="172" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-9" value="google.updatePassword" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="152" y="865" width="183" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-10" value="getGoogleCredentials" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="484" y="865" width="169" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-11" value="createGoogleCredentials" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="816" y="865" width="192" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-12" value="createAuthURL" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="375" y="431" width="123" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-13" value="getUserProfile" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="818" y="533" width="117" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-14" value="getUserDetailsFromToken" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="142" y="636" width="197" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-15" value="Frontend" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1251" y="176" width="828" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-16" value="GoogleAuth Component" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1574" y="636" width="184" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-17" value="Callback Component" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1411" y="201" width="162" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-18" value="Welcome Component" style="whiteSpace=wrap;strokeWidth=2;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1876" y="738" width="167" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-19" value="initiates OAuth" style="curved=1;startArrow=none;endArrow=block;exitX=0.7;exitY=-0.01;entryX=1;entryY=0.99;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-16" target="GUeveyMtgKN2sRDNsN3h-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1779" y="601" />
+              <mxPoint x="1779" y="108" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-20" value="redirects to Google" style="curved=1;startArrow=none;endArrow=block;exitX=0.17;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-2" target="GUeveyMtgKN2sRDNsN3h-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1492" y="108" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-21" value="receives code" style="curved=1;startArrow=none;endArrow=block;exitX=0.15;exitY=1;entryX=1;entryY=0.38;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-17" target="GUeveyMtgKN2sRDNsN3h-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1320" y="269" />
+              <mxPoint x="1320" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-22" value="generates auth URL" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.88;entryX=0;entryY=0.38;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-6" target="GUeveyMtgKN2sRDNsN3h-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="339" y="397" />
+              <mxPoint x="339" y="601" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-23" value="fetches credentials" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=1;entryY=0.38;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-16" target="GUeveyMtgKN2sRDNsN3h-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1666" y="704" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-24" value="saves credentials" style="curved=1;startArrow=none;endArrow=block;exitX=0.77;exitY=0.98;entryX=1;entryY=0.33;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-16" target="GUeveyMtgKN2sRDNsN3h-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1816" y="704" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-25" value="fetches user profile" style="curved=1;startArrow=none;endArrow=block;exitX=0.87;exitY=0.98;entryX=0.48;entryY=0;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-6" target="GUeveyMtgKN2sRDNsN3h-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="732" y="397" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-26" value="fetches profile details" style="curved=1;startArrow=none;endArrow=block;exitX=0.1;exitY=0.99;entryX=0;entryY=0.25;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-7" target="GUeveyMtgKN2sRDNsN3h-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="534" y="499" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-27" value="returns profile details" style="curved=1;startArrow=none;endArrow=block;exitX=0.07;exitY=1;entryX=0;entryY=0.34;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-13" target="GUeveyMtgKN2sRDNsN3h-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="723" y="601" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-28" value="fetches user details" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.92;entryX=1;entryY=0.38;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-16" target="GUeveyMtgKN2sRDNsN3h-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1343" y="704" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-29" value="updates password" style="curved=1;startArrow=none;endArrow=block;exitX=0.24;exitY=0.99;entryX=0.3;entryY=0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-8" target="GUeveyMtgKN2sRDNsN3h-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="133" y="797" />
+              <mxPoint x="133" y="831" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-30" value="handle login" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.21;entryX=1;entryY=0.65;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-16" target="GUeveyMtgKN2sRDNsN3h-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1167" y="601" />
+              <mxPoint x="1167" y="397" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-31" value="redirects to Google" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.41;entryX=0.9;entryY=1;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-6" target="GUeveyMtgKN2sRDNsN3h-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1690" y="304" />
+              <mxPoint x="1690" y="269" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-32" value="provides code" style="curved=1;startArrow=none;endArrow=block;exitX=0.39;exitY=1;entryX=1;entryY=0.39;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-17" target="GUeveyMtgKN2sRDNsN3h-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1438" y="269" />
+              <mxPoint x="1438" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-33" value="fetches user profile" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.7;entryX=1;entryY=0.07;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-6" target="GUeveyMtgKN2sRDNsN3h-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1042" y="397" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-34" value="fetches profile details" style="curved=1;startArrow=none;endArrow=block;exitX=0.45;exitY=0.99;entryX=0.04;entryY=0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-7" target="GUeveyMtgKN2sRDNsN3h-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="713" y="499" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-35" value="returns profile details" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.96;entryX=0;entryY=0.25;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-13" target="GUeveyMtgKN2sRDNsN3h-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1068" y="601" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-36" value="fetches user details" style="curved=1;startArrow=none;endArrow=block;exitX=0.21;exitY=0.98;entryX=1;entryY=0.39;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-16" target="GUeveyMtgKN2sRDNsN3h-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1504" y="704" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-37" value="updates password" style="curved=1;startArrow=none;endArrow=block;exitX=0.74;exitY=0.99;entryX=0.68;entryY=0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-8" target="GUeveyMtgKN2sRDNsN3h-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="797" />
+              <mxPoint x="345" y="831" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-38" value="show user details" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.96;entryX=0.5;entryY=0;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-16" target="GUeveyMtgKN2sRDNsN3h-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1960" y="704" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-39" value="get credentials" style="curved=1;startArrow=none;endArrow=block;exitX=0.64;exitY=0.01;entryX=0.67;entryY=0.99;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-10" target="GUeveyMtgKN2sRDNsN3h-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="831" />
+              <mxPoint x="640" y="797" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-40" value="create/update credentials" style="curved=1;startArrow=none;endArrow=block;exitX=0.68;exitY=0.01;entryX=0.72;entryY=0.99;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-11" target="GUeveyMtgKN2sRDNsN3h-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1016" y="831" />
+              <mxPoint x="1016" y="797" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-41" value="create auth URL" style="curved=1;startArrow=none;endArrow=block;exitX=0.89;exitY=0;entryX=0.5;entryY=0.98;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-12" target="GUeveyMtgKN2sRDNsN3h-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="584" y="397" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-42" value="get user profile" style="curved=1;startArrow=none;endArrow=block;exitX=0.92;exitY=0.01;entryX=1;entryY=0.94;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-13" target="GUeveyMtgKN2sRDNsN3h-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1027" y="499" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-43" value="get user details from token" style="curved=1;startArrow=none;endArrow=block;exitX=0.35;exitY=0.98;entryX=0.32;entryY=0;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-14" target="GUeveyMtgKN2sRDNsN3h-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="704" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-44" value="fetches credentials" style="curved=1;startArrow=none;endArrow=block;exitX=0.33;exitY=0.99;entryX=0.36;entryY=0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-4" target="GUeveyMtgKN2sRDNsN3h-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="497" y="797" />
+              <mxPoint x="497" y="831" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-45" value="saves/updates credentials" style="curved=1;startArrow=none;endArrow=block;exitX=0.29;exitY=0.99;entryX=0.32;entryY=0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-5" target="GUeveyMtgKN2sRDNsN3h-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="808" y="797" />
+              <mxPoint x="808" y="831" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-46" value="generates auth URL" style="curved=1;startArrow=none;endArrow=block;exitX=0.12;exitY=0.98;entryX=0.5;entryY=0;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-6" target="GUeveyMtgKN2sRDNsN3h-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="435" y="397" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-47" value="fetches user profile" style="curved=1;startArrow=none;endArrow=block;exitX=0.78;exitY=0.99;entryX=0.51;entryY=0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-7" target="GUeveyMtgKN2sRDNsN3h-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="882" y="499" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-48" value="returns profile details" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.64;entryX=0.5;entryY=-0.01;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-13" target="GUeveyMtgKN2sRDNsN3h-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="241" y="601" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUeveyMtgKN2sRDNsN3h-49" value="returns user details" style="curved=1;startArrow=none;endArrow=block;exitX=0.7;exitY=0.98;entryX=0.73;entryY=0;rounded=0;fontSize=15;fontStyle=1" edge="1" parent="1" source="GUeveyMtgKN2sRDNsN3h-14" target="GUeveyMtgKN2sRDNsN3h-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="361" y="704" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
